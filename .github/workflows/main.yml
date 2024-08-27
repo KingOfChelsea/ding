@@ -1,8 +1,14 @@
 name: Send DingDing Message
 
 on:
-   schedule:
-    - cron: '*/1 * * * *'
+  schedule:
+    - cron: '30 0 * * *'  # 在UTC时间凌晨0:30（中国时间上午7:30）
+    - cron: '30 3 * * *'  # 在UTC时间凌晨3:30（中国时间上午10:30）
+    - cron: '30 6 * * *'  # 在UTC时间凌晨6:30（中国时间下午1:30）
+    - cron: '30 9 * * *'  # 在UTC时间上午9:30（中国时间下午4:30）
+    - cron: '30 12 * * *'  # 在UTC时间中午12:30（中国时间晚上7:30）
+
+  workflow_dispatch:  # 允许手动触发
 
 jobs:
   send-message:
