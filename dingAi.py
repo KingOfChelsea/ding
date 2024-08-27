@@ -22,7 +22,7 @@ def send_dingding_message(webhook, content, at_mobiles, person):
         "markdown": {
             "title": f"📢 新任务通知: {content}",
             "text": (
-                f"### 📋 Hi {person} 您有一个马帮付款单待审核\n"
+                f"### 📋 Hi {person} 您有一个马帮付款单号待审核\n"
                 f"**任务内容:**\n"
                 f">#### {content} \n\n"
                 f"**分配给:**\n"
