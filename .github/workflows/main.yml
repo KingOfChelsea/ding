@@ -24,5 +24,4 @@ jobs:
 
     - name: Run script
       run: python dingAi.py
-      env:
-        DINGTALK_WEBHOOK_URL: ${{ secrets.DINGTALK_WEBHOOK_URL }}  # 使用 GitHub Secrets 来保护敏感信息
+
