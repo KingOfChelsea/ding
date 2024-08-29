@@ -128,7 +128,7 @@ def main():
                     if match:
                         result = match.group(1).strip()
 
-                        if result == "TieliangWang" and total_amount > 1000:
+                        if result == "TieliangWang" and int(total_amount) > 1000:
                             order_counts["MichaelWong"]["count"] += 1
                             order_counts["MichaelWong"]["orders"].append(order_num)
                         elif result in next_person:
