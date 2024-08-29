@@ -141,7 +141,7 @@ def main():
                 orders = ', '.join(details["orders"])
                 message = f"{person} 你有 {details['count']} 笔财务-付款单（待审核），订单编号：{orders}"
                 print(message)
-                # send_dingding_message(webhook_url, message, [details["phone"]], person)
+                send_dingding_message(webhook_url, message, [details["phone"]], person)
             else:
                 print(f"{person} 0 笔订单需要处理")
 
